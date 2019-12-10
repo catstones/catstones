@@ -1,0 +1,34 @@
+@import "palette";
+@import "utils";
+
+.Post {
+  .header {
+    $container-vertical-margin: 3em;
+    @extend %centerize;
+    margin-top: $container-vertical-margin;
+    margin-bottom: $container-vertical-margin;
+
+    .title {
+      color: $text-color;
+      font-size: 2.5em;
+      margin: 0;
+      padding: 0;
+    }
+
+    .info-line {
+      margin: 0;
+      padding: 0;
+      color: $text-color-light;
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  .content {
+    @extend %centerize;
+    border-bottom: 1px solid #eee;
+    padding-bottom: $base-vertical-margin;
+    margin-bottom: $base-vertical-margin;
+  }
+}

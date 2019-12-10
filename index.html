@@ -1,0 +1,24 @@
+---
+---
+
+<header class="IndexHeader">
+  <h1>CATStones</h1>
+</header>
+
+{% unless site.posts.empty? %}
+  <ul class="PostList">
+  {% for post in site.posts %}
+  <li class="item">
+    <a class="title" href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+    <p class="description">
+      <time>{{ post.date | date: "%Y-%m-%d" }}</time> -
+      {{ post.description }}
+    </p>
+  </li>
+  {% endfor %}
+  </ul>
+{% else %}
+There is no post now!
+{% endunless %}

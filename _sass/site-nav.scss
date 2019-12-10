@@ -1,0 +1,43 @@
+@import "utils";
+
+.SiteNav {
+  @extend %centerize;
+  $item-horizontal-padding: 0.5em;
+  $item-vertical-padding: 1em;
+  $container-horizontal-padding: 1.5em;
+  display: flex;
+  padding: 0 $container-horizontal-padding;
+
+  .right {
+    margin-left: auto;
+  }
+
+  .item {
+    display: inline-block;
+    padding: $item-vertical-padding $item-horizontal-padding;
+    text-decoration: none;
+    color: $text-color-light;
+
+    &.active {
+      border-bottom: 3px solid $primary-color;
+      color: $primary-color;
+      cursor: default;
+    }
+    &.title {
+      font-weight: bold;
+      color: $primary-color;
+      &:hover {
+        color: $primary-color-light;
+      }
+    }
+  }
+
+  a.item {
+    &.active:hover {
+      color: $primary-color;
+    }
+    &:hover {
+      color: $text-color;
+    }
+  }
+}

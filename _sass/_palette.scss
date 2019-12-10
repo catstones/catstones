@@ -1,0 +1,20 @@
+@import "vendor/open-color";
+
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+$body-font-family: $sans-serif;
+$head-font-family: $sans-serif;
+
+$max-width: 780px;
+
+$text-color: $oc-gray-8;
+$text-color-light: $oc-gray-6;
+$text-color-heavy: $oc-gray-9;
+
+$primary-color-light: $oc-orange-6;
+$primary-color: $oc-orange-7;
+$primary-color-heavy: $oc-orange-9;
+
+$base-vertical-margin: 3em;
+$base-side-padding: 1em;

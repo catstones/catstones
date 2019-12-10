@@ -1,0 +1,33 @@
+title: CATStones
+description: 가톨릭대학교 개발 소모임
+
+timezone: Asia/Seoul
+encoding: utf-8
+
+authors:
+  - username: An Nyeong
+    shownname: 안녕
+    avatar: /assets/images/avatars/an-nyeong.jpg
+    bio: 안녕하세요
+  - username: 백상우
+    shownname: 백상우
+    avatar:
+    bio:
+  - username: 한영찬
+    shownname: 한영찬
+    avatar:
+    bio:
+  - username: 박진우
+    shownname: 박진우
+    avatar:
+    bio:
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      type: "posts"
+    values:
+      layout: "post"

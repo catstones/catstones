@@ -1,0 +1,29 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      {% if page.title %}
+        {{ page.title }} | {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <nav class="SiteNav">
+      <div class="left">
+        <a class="title item" href="/">CATStones</a>
+      </div>
+      <div class="right">
+        {% include active-link.html class="item" text="소개" to="/about.html" %}
+        {% include active-link.html class="item" text="구성원"
+        to="/members.html" %}
+        <a href="https://github.com/catstones" class="item">GitHub</a>
+      </div>
+    </nav>
+    {{ content }}
+  </body>
+</html>

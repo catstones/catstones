@@ -1,0 +1,25 @@
+@import "utils";
+
+.MemberItem {
+  @extend %centerize;
+  $avatar-size: 80px;
+
+  display: flex;
+  margin-bottom: $base-vertical-margin;
+
+  .avatar {
+    width: $avatar-size;
+    height: $avatar-size;
+    margin-right: 1em;
+  }
+
+  .title {
+    margin: 0;
+    color: $text-color;
+  }
+
+  .bio {
+    margin: 0;
+    color: $text-color;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../palette";
+
+body {
+  font-family: $body-font-family;
+  color: $text-color;
+  word-break: keep-all;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  color: $primary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $head-font-family;
+  color: $text-color-heavy;
+}
+
+blockquote {
+  font-size: 1.2em;
+  color: $text-color-light;
+  padding-left: $base-side-padding;
+  padding-right: $base-side-padding;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+blockquote,
+ul,
+ol,
+pre {
+  margin-top: $base-vertical-margin;
+  margin-bottom: $base-vertical-margin;
+}
+
+li {
+  margin-bottom: 0.6em;
+}

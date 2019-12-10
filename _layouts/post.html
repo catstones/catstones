@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign author=site.authors | where: 'username', page.author | first %}
+
+<div class="Post">
+
+<header class="header">
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+  <p class="info-line">
+    <time>{{ page.date | date: "%Y년 %m월 %d일"}}</time>에
+    <a href="/members#{{ author.username | slugify }}">{{ author.shownname }}</a> 씀.
+  </p>
+</header>
+
+<main class="content">
+  {{ content }}
+</main>
+
+</div>
